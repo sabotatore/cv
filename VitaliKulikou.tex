@@ -1,0 +1,112 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[12pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{grey}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Vitali}
+\familyname{Kulikou}
+\title{Ruby Developer}
+\mobile{+375 25 9722001}
+\email{sabotatore@gmail.com}
+\extrainfo{Skype: s4botatore}
+\address{}{Minsk, Belarus}
+\social[linkedin]{sabotatore}
+\social[github]{sabotatore}
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Personal information}
+\cvitem{Date of birth}{19 March 1983}
+\cvitem{Gender}{Male}
+\cvitem{Marital status}{Married}
+
+\section{Technical Skills}
+
+\subsection{Programming}
+\cvitem{Ruby}{Ruby on Rails, scripting, applications development}
+\cvitem{JavaScript}{jQuery, Prototype, AngularJS, CoffeeScript}
+\cvitem{SQL/NoSQL}{MySQL, PostgreSQL, Redis}
+
+\subsection{Other Skills}
+\cvitem{Mark-up}{CSS/Sass, HTML (Erb/Haml templates)}
+\cvitem{Test tools}{RSpec, TestUnit, Capybara, Cucumber}
+\cvitem{VCS}{GIT(Github, Bitbucket), CVS}
+\cvitem{Deploying}{Heroku, Capistrano}
+\cvitem{PM tools} { JIRA, Basecamp }
+\cvitem{IDE}{Sublime Text, Vim}
+\cvitem{OS}{Linux - intermediate administration and using}
+\cvitem{Other}{OOP and patterns, REST/SOA}
+\cvitem{}{Regular Expressions}
+\cvitem{}{Memcached}
+\cvitem{}{A/B tests, Google Analytics}
+
+\section{Professional Experience}
+
+\subsection{Shoedazzle}
+
+\cvline{}{Online Personal Stylist, E-Commerce Startup. Site: \httplink{www.shoedazle.com}}
+
+\cventry{11/2011 -- 02/2014}{Developer}{}{}{}{
+ShoeDazzle is an online shoes, apparel, and accessories e-commerce site.\\
+A lot of my efforts were directed to code refactoring in order to simplify the supporting of the code and adding new features. I was involved in deep refactoring products system and registration quiz, in reducing the number of SQL queries, in project transfer from CSS to Sass, in writing unit and integration tests in order to increase coverage, in upgrade the whole code base from Rails 2.3.x to Rails 3.x.\\
+One of sub projects I developed was A/B tests framework for full testing of the registration and purchase funnels with opportunity to add any amount of custom metrics.\\
+Technologies: Rails 2/3/4, Ruby 1.9/2.0, MySQL, CoffeeScript, JQuery, AngularJS, REST/SOA, Oauth2, Redis, Amazon AWS, Git, Bootstrap, Sass, Haml, Erb.
+}
+
+\subsection{Altoros Development}
+
+\cvline{}{Outsourcing, product engineering to technology companies, own products. Site: \httplink{www.altoros.com}}
+
+\cventry{09/2007 -- 10/2010}{Developer}{Ribose - social collaboration platform, \httplink{www.ribose.com}}{}{}{
+A big application for life organizing, project and organizations management.\\
+We used Scrum methodology during development. Each developer took a part in discussion and planning the tasks.\\
+I was engaged in development of project management tools, calendar, wiki, notifications system and many others. One of most interesting project I dealt was the Chat, based on Jabber server and used Push technology for communications between server and clients.\\
+Technologies: Rails 2/3, Ruby 1.8/1.9, TDD/BDD (Rspec, TestUnit), Cucumber, REST, Rack, MySQL, Prototype, JQuery, Git, Sphinx, Erb, HTML, CSS.
+}
+
+\cventry{05/2005 -- 08/2007}{Developer}{}{}{}{
+I was involved in: customization of e-commerce solutions, development web applications, support and bugfix.\\
+Technologies: PHP, UML, X-Cart E-commerce, CSS, HTML.
+}
+
+\cventry{12/2003 -- 04/2005}{Front-end Developer}{}{}{}{
+Front-end development for wide range of websites.\\
+Technologies: Javascript, CSS, HTML.
+}
+
+\section{Education}
+\cventry{2000--2005}{Bachelor}{Belarussian State University of Informatics and Radioelectronics}{}{}{Specialization: Computer-Aided Design \\ Qualification: Design Engineer}  % arguments 3 to 6 are optional
+
+\section{Foreign Languages}
+\cvitem{English}{intermediate reading/written, basic verbal skills}
+
+\end{document}
+
+
+%% end of file `template.tex'.
